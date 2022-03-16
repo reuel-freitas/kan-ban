@@ -104,7 +104,7 @@ const styles = StyleSheet.create({
         flex: 3
     },
     taskList: {
-        flex: 7
+        flex: 8
     },
     iconBar: {
         flexDirection: 'row',

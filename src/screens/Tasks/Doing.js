@@ -54,7 +54,7 @@ export const Doing = ({ user }) => {
 
     return (
         <View style={styles.container}>
-            <Header bg="#BEDB39" title="In Progress" name={user.user.name} />
+            <Header bg="#F0C419" title="In Progress" name={user.user.name} />
             <View style={styles.taskList}>
                 <TaskList tasks={tasks} onDelete={handleDeleteTask} onChangeStatus={handleFinishTask} />
             </View>
@@ -71,7 +71,7 @@ const styles = StyleSheet.create({
         flex: 3
     },
     taskList: {
-        flex: 7
+        flex: 8
     },
     iconBar: {
         flexDirection: 'row',

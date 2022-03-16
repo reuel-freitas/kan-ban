@@ -12,7 +12,7 @@ export default ({ bg, title, name }) => {
     const today = moment().format('ddd, D/MM');
 
     return (
-        <Header backgroundColor={bg} style={{ width: '100%' }}
+        <Header backgroundColor={bg} style={{ width: '100%', flex: 2 }}
             leftComponent={
                 <View style={{width: 125, justifyContent: 'flex-start', alignItems: 'flex-start'}}>
                     <Text style={[styles.title]}>{title}</Text>
