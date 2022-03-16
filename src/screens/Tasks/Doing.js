@@ -54,7 +54,7 @@ export const Doing = ({ user }) => {
 
     return (
         <View style={styles.container}>
-            <Header title="Tarefas em andamento" name={user.name} />
+            <Header bg="#BEDB39" title="In Progress" name={user.user.name} />
             <View style={styles.taskList}>
                 <TaskList tasks={tasks} onDelete={handleDeleteTask} onChangeStatus={handleFinishTask} />
             </View>

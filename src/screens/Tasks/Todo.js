@@ -71,7 +71,7 @@ export const Todo = ({ user }) => {
 
     return (
         <View style={styles.container}>
-            <Header bg="#136480" title="Tarefas a fazer" name={user.user.name} />
+            <Header bg="#136480" title="To do" name={user.user.name} />
             {showTaskCreate &&
                 <TaskCreate
                     onSave={handleNewTask}

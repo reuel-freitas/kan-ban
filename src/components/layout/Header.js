@@ -5,6 +5,7 @@ import commonStyles from "../../commonStyles";
 import cabecalho3 from '../../../assets/imgs/cabecalho2.png'
 import header from '../../../assets/imgs/header.png'
 import { Header } from 'react-native-elements';
+import LinearGradient from 'react-native-linear-gradient';
 
 export default ({ bg, title, name }) => {
 
@@ -13,7 +14,7 @@ export default ({ bg, title, name }) => {
     return (
         <Header backgroundColor={bg} style={{ width: '100%' }}
             leftComponent={
-                <View style={{width: 125, justifyContent: 'center', alignItems: 'center'}}>
+                <View style={{width: 125, justifyContent: 'flex-start', alignItems: 'flex-start'}}>
                     <Text style={[styles.title]}>{title}</Text>
                 </View>
             }
@@ -23,18 +24,7 @@ export default ({ bg, title, name }) => {
                     <Text style={styles.subtitle}>{today}</Text>
                 </View>
             }
-
-        >
-
-        </Header>
-
-        // <ImageBackground source={header} style={{ flex: 3 }} resizeMode='cover'>
-        //     <View style={styles.titleBar}>
-        //         <Text style={styles.name}>Olá, {name}!</Text>
-        //         <Text style={styles.subtitle}>{today}</Text>
-        //         <Text style={styles.title}>{title}</Text>
-        //     </View>
-        // </ImageBackground>
+        />
     )
 }
 

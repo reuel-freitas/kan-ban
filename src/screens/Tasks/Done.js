@@ -49,7 +49,7 @@ export const Done = ({user}) => {
 
     return (
         <View style={styles.container}>
-            <Header title="Tarefas Finalizadas" name={user.name} />
+            <Header bg="#289976" title="Done" name={user.user.name} />
             <View style={styles.taskList}>
                 <TaskList tasks={tasks} onDelete={handleDeleteTask} onChangeStatus={handleUndoFinishTask} />
             </View>
@@ -62,7 +62,7 @@ const styles = StyleSheet.create({
         flex: 1
     },
     taskList: {
-        flex: 7
+        flex: 7,
     },
     iconBar: {
         flexDirection: 'row',
